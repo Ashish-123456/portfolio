@@ -1,5 +1,5 @@
 'use client'
-import { userInfo, headerItems} from "@/constants/constant";
+import { headerItems} from "@/constants/constant";
 import { NavItem } from "@/modals/Header";
 import { useState } from "react";
 import {BiMenu} from "react-icons/bi"
@@ -14,7 +14,7 @@ const Header: React.FC=()=>{
                 <BiMenu
                     size={40}
                     className="md:hidden"
-                    onClick={(e)=>showNavItems(!navItems)}
+                    onClick={()=>showNavItems(!navItems)}
                 />
             </div>
             <div className={`mr-8 md:space-x-6  mt-3 md:mt-0 ${navItems?'block':'hidden'} md:block`}>

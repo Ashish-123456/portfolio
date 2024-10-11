@@ -15,8 +15,8 @@ const Projects:React.FC=()=>{
         <h1 className="text-4xl lg:text-5xl my-6 ">Projects</h1>    
         <div className="flex flex-row justify-evenly items-center text-center p-2 flex-wrap">
             {
-                Object.keys(projects).map(projectKey =>(
-                  <Link  
+                Object.keys(projects).map((projectKey,idx) =>(
+                  <Link  key={idx}
                     href={projects[projectKey as keyof Projects ].url}
                     className="w-full md:w-1/2 lg:w-1/4 m-2 p-2 shadow-2xl rounded-sm">
                   <Image 
