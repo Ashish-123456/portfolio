@@ -1,6 +1,6 @@
 // 'use client'
 
-import { headerItems, projects, userInfo } from "@/constants/constant";
+import { headerItems,  userInfo } from "@/constants/constant";
 import Image from "next/image";
 import {Link as ScrollLink} from "react-scroll"
 

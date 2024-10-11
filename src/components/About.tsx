@@ -1,8 +1,6 @@
 // 'use client'
 
 import { headerItems, userInfo } from "@/constants/constant";
-import Image from "next/image";
-import { UserInfo } from "os";
 
 
 const About:React.FC=()=>{
