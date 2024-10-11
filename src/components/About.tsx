@@ -40,7 +40,7 @@ const About:React.FC=()=>{
                         <div key={index}>
                         <p className="inline text-xl">{skillcategory}: </p>
                         {
-                            skills.map((val,idx)=>(
+                            skills.map((val: string, idx: number)=>(
                                 <span key={idx} className="bg-gray-200 m-1 p-2 inline-block font-medium rounded-md text-l">{val}</span>
                             ))
                         }
