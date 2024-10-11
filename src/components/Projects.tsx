@@ -1,7 +1,7 @@
 // 'use client'
 
 import { headerItems, projects } from "@/constants/constant";
-import { Projects } from "@/modals/Projects";
+import type { Projects } from "@/modals/Projects";
 import Image from "next/image";
 import Link from "next/link";
 
