@@ -36,11 +36,11 @@ const About:React.FC=()=>{
             <div className="my-5">
             <h2 className="text-xl text-blue-600 md:text-2xl inline-block font-medium lg:mt-auto ">Skills</h2>
                 {
-                    Object.keys(userInfo.skills).map((skillcategory,index)=>(
+                    Object.entries(userInfo.skills).map(([skillcategory,skills],index)=>(
                         <div key={index}>
                         <p className="inline text-xl">{skillcategory}: </p>
                         {
-                            userInfo.skills[skillcategory].map((val,idx)=>(
+                            skills.map((val,idx)=>(
                                 <span key={idx} className="bg-gray-200 m-1 p-2 inline-block font-medium rounded-md text-l">{val}</span>
                             ))
                         }
